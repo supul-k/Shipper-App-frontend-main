@@ -1,0 +1,27 @@
+.header-container {
+  background-color: #4527A0;
+  color: #fff;
+  padding: 20px
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-button-container {
+    margin-right: 30px;
+}
+
+.nav-button {
+    font-size: 17px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

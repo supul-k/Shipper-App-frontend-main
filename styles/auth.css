@@ -1,0 +1,15 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin-top: 10%;
+    padding-bottom: 80px;
+}
+
+
+.center-content {
+    text-align: center;
+}
