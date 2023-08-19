@@ -403,11 +403,11 @@ const PrintInvoice = () => {
                             <span></span>
                             <br />
                             <span style={{ fontSize: 17 }}>
-                              {row.label_1_value !== "" &&
-                              row.label_1_value !== null ? (
+                              {row.chassis !== "" &&
+                              row.chassis !== null ? (
                                 <>
                                   {" "}
-                                  <span>${row.label_1_value}</span>
+                                  <span>${row.chassis}</span>
                                   <br />
                                 </>
                               ) : (

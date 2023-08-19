@@ -25,7 +25,8 @@ const BookingReceiptsDropDown = ({ formValues, setFormValues, bookingData }: IPr
         <Dropdown
           placeholder="Search by booking number"
           selection
-          value={formValues.booking_id}
+          // value={formValues.booking_id}
+          value={bookingData[0]?.id}
           options={options(bookingData)}
           style={{ width: "100%" }}
           onChange={(e, { value, name }) => {

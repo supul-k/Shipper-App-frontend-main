@@ -29,7 +29,8 @@ const ConsigneeForm = ({
         <Dropdown
           placeholder="Search by consignee name"
           selection
-          value={formValues.consignee_id}
+          // value={formValues.consignee_id}
+          value={consigneeData[0]?.id}
           options={options(consigneeData)}
           style={{ width: "100%" }}
           onChange={(e, { value, name }) => {

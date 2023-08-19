@@ -10,7 +10,7 @@ export type IInvoice_Response = {
   truck: string;
   ectn_besc: string;
   label_1: string;
-  label_1_value: string;
+  chassis: string;
   label_2: string;
   label_2_value: string;
   label_3: string;
@@ -36,7 +36,7 @@ export const invoice_form_values: IInvoice_Response = {
   truck: "",
   ectn_besc: "",
   label_1: "",
-  label_1_value: "",
+  chassis: "",
   label_2: "",
   label_2_value: "",
   label_3: "",

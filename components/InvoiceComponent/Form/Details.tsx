@@ -28,6 +28,9 @@ const Details = ({
       };
     });
   };
+  console.log(formValues);
+  
+  
 
   return (
     <div>
@@ -69,21 +72,24 @@ const Details = ({
           />
         </div>
         <div style={{ width: "30%", marginRight: 10, marginBottom: 20 }}>
-          <Input
+          {/* <Input
             focus
             style={{ width: "100%" }}
             name="label_1"
             placeholder="Label"
             onChange={handleInput}
             value={formValues.label_1}
-          />
+          /> */}
+          <p>
+            <strong>CHASSIS</strong>
+          </p>
           <Input
             focus
             style={{ width: "100%" }}
-            name="label_1_value"
+            name="chassis"
             placeholder="Charge amount"
             onChange={handleInput}
-            value={formValues.label_1_value}
+            value={formValues.chassis}
           />
         </div>
         <div style={{ width: "30%", marginRight: 10, marginBottom: 20 }}>
@@ -217,9 +223,12 @@ const Details = ({
                 formValues.ocean_freight ? formValues.ocean_freight : "0"
               );
 
-              let truck = parseInt(formValues.truck ? formValues.truck : "0");
-              let label_1_value = parseInt(
-                formValues.label_1_value ? formValues.label_1_value : "0"
+              let truck = parseInt(
+                formValues.truck ? formValues.truck : "0"
+              );
+              
+              let chassis = parseInt(
+                formValues.chassis ? formValues.chassis : "0"
               );
 
               let label_2_value = parseInt(
@@ -242,7 +251,7 @@ const Details = ({
                 ectn +
                 ocean_freight +
                 truck +
-                label_1_value +
+                chassis +
                 label_2_value +
                 label_3_value +
                 label_4_value +
